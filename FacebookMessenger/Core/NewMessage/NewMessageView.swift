@@ -18,6 +18,31 @@ struct NewMessageView: View {
                     .frame(height: 44)
                     .padding(.leading)
                     .background(Color(.systemGroupedBackground))
+                
+                Text("Contacts")
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+                    .padding()
+                
+                ForEach(0...10, id: \.self) { user in
+                    VStack {
+                        HStack {
+                            Image(systemName: "person.circle.fill")
+                                .resizable()
+                                .frame(width: 32, height: 32)
+                                .foregroundColor(.secondary)
+                            Text("Nick Pavlov")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                            
+                            Spacer()
+                        }
+                        .padding(.leading)
+                        
+                        Divider()
+                            .padding(.leading, 40)
+                    }
+                }
             }
             .navigationTitle("New Message")
             .navigationBarTitleDisplayMode(.inline)
