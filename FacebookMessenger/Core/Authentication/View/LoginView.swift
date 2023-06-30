@@ -14,6 +14,7 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                Spacer()
                 // logo image
                 Image("messengerLogo")
                     .resizable()
@@ -24,7 +25,17 @@ struct LoginView: View {
                 // text fields
                 VStack {
                     TextField("Enter your email", text: $email)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .padding(.horizontal, 24)
                     SecureField("Enter your password", text: $password)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .cornerRadius(10)
+                        .padding(.horizontal, 24)
                 }
                 
                 // forgot password
@@ -44,8 +55,14 @@ struct LoginView: View {
                     
                 } label: {
                     Text("Login")
-                    
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 360, height: 44)
+                        .background(.blue)
+                        .cornerRadius(10)
                 }
+                .padding(.vertical)
                 
                 
                 // facebook login
@@ -75,7 +92,7 @@ struct LoginView: View {
                 .padding(.top, 8)
                 
                 Spacer()
-                
+                Divider()
                 
                 // sign up link
                 NavigationLink {
@@ -88,6 +105,7 @@ struct LoginView: View {
                     }
                     .font(.footnote)
                 }
+                .padding(.vertical)
             }
         }
     }
