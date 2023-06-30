@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct InboxView: View {
+    @State private var showNewMessegeView = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -21,6 +23,9 @@ struct InboxView: View {
                 .listStyle(.plain)
                 .frame(height: UIScreen.main.bounds.height - 120)
             }
+            .fullScreenCover(isPresented: $showNewMessegeView) {
+                NewMessageView()
+            }
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack {
@@ -33,7 +38,7 @@ struct InboxView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-                        
+                        showNewMessegeView.toggle()
                     } label: {
                         Image(systemName: "square.and.pencil.circle.fill")
                             .resizable()

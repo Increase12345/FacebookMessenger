@@ -11,6 +11,7 @@
 		402249D62A4F71D200AEA449 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249D52A4F71D200AEA449 /* InboxView.swift */; };
 		402249D92A4F72DE00AEA449 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249D82A4F72DE00AEA449 /* ActiveNowView.swift */; };
 		402249DB2A4F746F00AEA449 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249DA2A4F746F00AEA449 /* InboxRowView.swift */; };
+		402249DE2A4F791300AEA449 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249DD2A4F791300AEA449 /* NewMessageView.swift */; };
 		407584F02A4F642700B20AEA /* FacebookMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407584EF2A4F642700B20AEA /* FacebookMessengerApp.swift */; };
 		407584F22A4F642700B20AEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407584F12A4F642700B20AEA /* ContentView.swift */; };
 		407584F42A4F642800B20AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407584F32A4F642800B20AEA /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		402249D52A4F71D200AEA449 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		402249D82A4F72DE00AEA449 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		402249DA2A4F746F00AEA449 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
+		402249DD2A4F791300AEA449 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		407584EC2A4F642700B20AEA /* FacebookMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407584EF2A4F642700B20AEA /* FacebookMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookMessengerApp.swift; sourceTree = "<group>"; };
 		407584F12A4F642700B20AEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 				402249D82A4F72DE00AEA449 /* ActiveNowView.swift */,
 			);
 			path = ActiveNow;
+			sourceTree = "<group>";
+		};
+		402249DC2A4F78E100AEA449 /* NewMessage */ = {
+			isa = PBXGroup;
+			children = (
+				402249DD2A4F791300AEA449 /* NewMessageView.swift */,
+			);
+			path = NewMessage;
 			sourceTree = "<group>";
 		};
 		407584E32A4F642700B20AEA = {
@@ -121,8 +131,9 @@
 		407585002A4F64CB00B20AEA /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				402249D72A4F72D000AEA449 /* ActiveNow */,
 				407585022A4F64F700B20AEA /* Authentication */,
+				402249D72A4F72D000AEA449 /* ActiveNow */,
+				402249DC2A4F78E100AEA449 /* NewMessage */,
 				402249D42A4F71BB00AEA449 /* Inbox */,
 				407585032A4F650300B20AEA /* Root */,
 			);
@@ -233,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				402249DB2A4F746F00AEA449 /* InboxRowView.swift in Sources */,
+				402249DE2A4F791300AEA449 /* NewMessageView.swift in Sources */,
 				407585062A4F652A00B20AEA /* LoginView.swift in Sources */,
 				407584F22A4F642700B20AEA /* ContentView.swift in Sources */,
 				402249D62A4F71D200AEA449 /* InboxView.swift in Sources */,
