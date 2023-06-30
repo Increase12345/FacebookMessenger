@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		402249D32A4F6FD000AEA449 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249D22A4F6FD000AEA449 /* RegistrationView.swift */; };
+		402249D62A4F71D200AEA449 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249D52A4F71D200AEA449 /* InboxView.swift */; };
 		407584F02A4F642700B20AEA /* FacebookMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407584EF2A4F642700B20AEA /* FacebookMessengerApp.swift */; };
 		407584F22A4F642700B20AEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407584F12A4F642700B20AEA /* ContentView.swift */; };
 		407584F42A4F642800B20AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407584F32A4F642800B20AEA /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		402249D22A4F6FD000AEA449 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		402249D52A4F71D200AEA449 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		407584EC2A4F642700B20AEA /* FacebookMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407584EF2A4F642700B20AEA /* FacebookMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookMessengerApp.swift; sourceTree = "<group>"; };
 		407584F12A4F642700B20AEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		402249D42A4F71BB00AEA449 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				402249D52A4F71D200AEA449 /* InboxView.swift */,
+			);
+			path = Inbox;
+			sourceTree = "<group>";
+		};
 		407584E32A4F642700B20AEA = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				407585022A4F64F700B20AEA /* Authentication */,
+				402249D42A4F71BB00AEA449 /* Inbox */,
 				407585032A4F650300B20AEA /* Root */,
 			);
 			path = Core;
@@ -209,6 +220,7 @@
 			files = (
 				407585062A4F652A00B20AEA /* LoginView.swift in Sources */,
 				407584F22A4F642700B20AEA /* ContentView.swift in Sources */,
+				402249D62A4F71D200AEA449 /* InboxView.swift in Sources */,
 				407584F02A4F642700B20AEA /* FacebookMessengerApp.swift in Sources */,
 				402249D32A4F6FD000AEA449 /* RegistrationView.swift in Sources */,
 			);
