@@ -10,18 +10,28 @@ import PhotosUI
 
 struct ProfileView: View {
     @StateObject var vm = ProfileViewModel()
+    let user: User
     
     var body: some View {
         VStack {
             // header
             VStack {
                 PhotosPicker(selection: $vm.selectedItem) {
-                    Image(systemName: "person.circle.fill")
-                        .resizable()
-                        .frame(width: 80, height: 80)
-                        .foregroundColor(.secondary)
+                    if let profileImage = vm.profileImage {
+                        profileImage
+                            .resizable()
+                            .scaledToFill()
+                            .clipShape(Circle())
+                            .frame(width: 80, height: 80)
+                    } else {
+                        Image(user.profileImageUrl ?? "")
+                            .resizable()
+                            .scaledToFill()
+                            .clipShape(Circle())
+                            .frame(width: 80, height: 80)
+                    }
                 }
-                Text("Nick Pavlov")
+                Text(user.fullName)
                     .font(.title2)
                     .fontWeight(.semibold)
             }
@@ -57,6 +67,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(user: .MOCK_USER)
     }
 }
