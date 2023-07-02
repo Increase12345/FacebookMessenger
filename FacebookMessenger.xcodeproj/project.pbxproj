@@ -12,6 +12,9 @@
 		402249D92A4F72DE00AEA449 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249D82A4F72DE00AEA449 /* ActiveNowView.swift */; };
 		402249DB2A4F746F00AEA449 /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249DA2A4F746F00AEA449 /* InboxRowView.swift */; };
 		402249DE2A4F791300AEA449 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249DD2A4F791300AEA449 /* NewMessageView.swift */; };
+		404B70EA2A52219F007750CC /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404B70E92A52219F007750CC /* ProfileView.swift */; };
+		404B70EC2A5222DA007750CC /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404B70EB2A5222DA007750CC /* SettingsOptionsViewModel.swift */; };
+		404B70EE2A522770007750CC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404B70ED2A522770007750CC /* ProfileViewModel.swift */; };
 		407584F02A4F642700B20AEA /* FacebookMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407584EF2A4F642700B20AEA /* FacebookMessengerApp.swift */; };
 		407584F22A4F642700B20AEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407584F12A4F642700B20AEA /* ContentView.swift */; };
 		407584F42A4F642800B20AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407584F32A4F642800B20AEA /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 		402249D82A4F72DE00AEA449 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		402249DA2A4F746F00AEA449 /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		402249DD2A4F791300AEA449 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		404B70E92A52219F007750CC /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		404B70EB2A5222DA007750CC /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
+		404B70ED2A522770007750CC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		407584EC2A4F642700B20AEA /* FacebookMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407584EF2A4F642700B20AEA /* FacebookMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookMessengerApp.swift; sourceTree = "<group>"; };
 		407584F12A4F642700B20AEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +73,32 @@
 				402249DD2A4F791300AEA449 /* NewMessageView.swift */,
 			);
 			path = NewMessage;
+			sourceTree = "<group>";
+		};
+		404B70E62A522177007750CC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				404B70E82A522193007750CC /* ViewModel */,
+				404B70E72A52218B007750CC /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		404B70E72A52218B007750CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				404B70E92A52219F007750CC /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		404B70E82A522193007750CC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				404B70EB2A5222DA007750CC /* SettingsOptionsViewModel.swift */,
+				404B70ED2A522770007750CC /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		407584E32A4F642700B20AEA = {
@@ -131,6 +163,7 @@
 		407585002A4F64CB00B20AEA /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				404B70E62A522177007750CC /* Profile */,
 				407585022A4F64F700B20AEA /* Authentication */,
 				402249D72A4F72D000AEA449 /* ActiveNow */,
 				402249DC2A4F78E100AEA449 /* NewMessage */,
@@ -244,12 +277,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				402249DB2A4F746F00AEA449 /* InboxRowView.swift in Sources */,
+				404B70EA2A52219F007750CC /* ProfileView.swift in Sources */,
 				402249DE2A4F791300AEA449 /* NewMessageView.swift in Sources */,
 				407585062A4F652A00B20AEA /* LoginView.swift in Sources */,
 				407584F22A4F642700B20AEA /* ContentView.swift in Sources */,
 				402249D62A4F71D200AEA449 /* InboxView.swift in Sources */,
 				402249D92A4F72DE00AEA449 /* ActiveNowView.swift in Sources */,
+				404B70EE2A522770007750CC /* ProfileViewModel.swift in Sources */,
 				407584F02A4F642700B20AEA /* FacebookMessengerApp.swift in Sources */,
+				404B70EC2A5222DA007750CC /* SettingsOptionsViewModel.swift in Sources */,
 				402249D32A4F6FD000AEA449 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
