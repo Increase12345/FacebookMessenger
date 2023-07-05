@@ -34,11 +34,7 @@ struct InboxView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack {
                         NavigationLink(value: user) {
-                            Image(user.profileImageUrl ?? "")
-                                .resizable()
-                                .scaledToFill()
-                                .clipShape(Circle())
-                                .frame(width: 32, height: 32)
+                            CircularProfileImageView(user: user, size: .xSmall)
                         }
                         
                         Text("Chats")
