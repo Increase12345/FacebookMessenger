@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401AD0E32A563BBE0026E9DA /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401AD0E22A563BBE0026E9DA /* ChatMessageCell.swift */; };
+		401AD0E52A563E5C0026E9DA /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401AD0E42A563E5C0026E9DA /* ChatBubble.swift */; };
 		402249D32A4F6FD000AEA449 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249D22A4F6FD000AEA449 /* RegistrationView.swift */; };
 		402249D62A4F71D200AEA449 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249D52A4F71D200AEA449 /* InboxView.swift */; };
 		402249D92A4F72DE00AEA449 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402249D82A4F72DE00AEA449 /* ActiveNowView.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		401AD0E22A563BBE0026E9DA /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		401AD0E42A563E5C0026E9DA /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		402249D22A4F6FD000AEA449 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		402249D52A4F71D200AEA449 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		402249D82A4F72DE00AEA449 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				404B70FB2A55F765007750CC /* ChatView.swift */,
+				401AD0E22A563BBE0026E9DA /* ChatMessageCell.swift */,
+				401AD0E42A563E5C0026E9DA /* ChatBubble.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -307,6 +313,8 @@
 				407585062A4F652A00B20AEA /* LoginView.swift in Sources */,
 				404B70FC2A55F766007750CC /* ChatView.swift in Sources */,
 				407584F22A4F642700B20AEA /* ContentView.swift in Sources */,
+				401AD0E32A563BBE0026E9DA /* ChatMessageCell.swift in Sources */,
+				401AD0E52A563E5C0026E9DA /* ChatBubble.swift in Sources */,
 				404B70F92A55F11D007750CC /* CircularProfileImageView.swift in Sources */,
 				402249D62A4F71D200AEA449 /* InboxView.swift in Sources */,
 				402249D92A4F72DE00AEA449 /* ActiveNowView.swift in Sources */,
