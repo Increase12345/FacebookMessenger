@@ -35,6 +35,7 @@
 		407584F72A4F642800B20AEA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407584F62A4F642800B20AEA /* Preview Assets.xcassets */; };
 		407585062A4F652A00B20AEA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407585052A4F652A00B20AEA /* LoginView.swift */; };
 		40A27CE92A7315940090E5FE /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A27CE82A7315940090E5FE /* InboxViewModel.swift */; };
+		40A27CED2A731E6B0090E5FE /* NewMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A27CEC2A731E6B0090E5FE /* NewMessageViewModel.swift */; };
 		40E6FE402A6615DD008CC380 /* UserServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6FE3F2A6615DD008CC380 /* UserServise.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		407584F62A4F642800B20AEA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		407585052A4F652A00B20AEA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		40A27CE82A7315940090E5FE /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
+		40A27CEC2A731E6B0090E5FE /* NewMessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageViewModel.swift; sourceTree = "<group>"; };
 		40E6FE3F2A6615DD008CC380 /* UserServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +104,8 @@
 		402249DC2A4F78E100AEA449 /* NewMessage */ = {
 			isa = PBXGroup;
 			children = (
-				402249DD2A4F791300AEA449 /* NewMessageView.swift */,
+				40A27CEB2A731E4F0090E5FE /* Views */,
+				40A27CEA2A731E4C0090E5FE /* ViewModels */,
 			);
 			path = NewMessage;
 			sourceTree = "<group>";
@@ -314,6 +317,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		40A27CEA2A731E4C0090E5FE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				40A27CEC2A731E6B0090E5FE /* NewMessageViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		40A27CEB2A731E4F0090E5FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				402249DD2A4F791300AEA449 /* NewMessageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -409,6 +428,7 @@
 				404B70F92A55F11D007750CC /* CircularProfileImageView.swift in Sources */,
 				402249D62A4F71D200AEA449 /* InboxView.swift in Sources */,
 				4022E5532A648A3F00A57133 /* LoginViewModel.swift in Sources */,
+				40A27CED2A731E6B0090E5FE /* NewMessageViewModel.swift in Sources */,
 				402249D92A4F72DE00AEA449 /* ActiveNowView.swift in Sources */,
 				404B70EE2A522770007750CC /* ProfileViewModel.swift in Sources */,
 				404B70F42A52327D007750CC /* User.swift in Sources */,

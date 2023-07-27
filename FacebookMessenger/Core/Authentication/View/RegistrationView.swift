@@ -29,7 +29,7 @@ struct RegistrationView: View {
                     .background(Color(.systemGray6))
                     .cornerRadius(10)
                     .padding(.horizontal, 24)
-                SecureField("Enter your full name", text: $vm.fullName)
+                TextField("Enter your full name", text: $vm.fullName)
                     .font(.subheadline)
                     .padding(12)
                     .background(Color(.systemGray6))

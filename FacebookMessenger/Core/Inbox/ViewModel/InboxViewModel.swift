@@ -14,6 +14,10 @@ class InboxViewModel: ObservableObject {
     
     private var cancellables = Set<AnyCancellable>()
     
+    init() {
+        setupSubscribers()
+    }
+    
     private func setupSubscribers() {
         UserServise.shared.$currentUser.sink { [weak self] user in
             self?.currentUser = user
