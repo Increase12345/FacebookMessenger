@@ -8,6 +8,7 @@
 import Foundation
 import Firebase
 
+@MainActor
 class NewMessageViewModel: ObservableObject {
     @Published var users = [User]()
     
@@ -17,7 +18,6 @@ class NewMessageViewModel: ObservableObject {
         }
     }
     
-    @MainActor
     func fetchUsers() async throws {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let users = try await UserServise.fetchAllUsers()
