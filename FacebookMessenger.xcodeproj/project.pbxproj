@@ -29,6 +29,8 @@
 		404B70F42A52327D007750CC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404B70F32A52327D007750CC /* User.swift */; };
 		404B70F92A55F11D007750CC /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404B70F82A55F11D007750CC /* CircularProfileImageView.swift */; };
 		404B70FC2A55F766007750CC /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404B70FB2A55F765007750CC /* ChatView.swift */; };
+		4069843C2A7C8F6700DFB122 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069843B2A7C8F6700DFB122 /* ChatService.swift */; };
+		4069843F2A7C90B300DFB122 /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069843E2A7C90B300DFB122 /* Constans.swift */; };
 		407584F02A4F642700B20AEA /* FacebookMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407584EF2A4F642700B20AEA /* FacebookMessengerApp.swift */; };
 		407584F22A4F642700B20AEA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407584F12A4F642700B20AEA /* ContentView.swift */; };
 		407584F42A4F642800B20AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 407584F32A4F642800B20AEA /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		404B70F32A52327D007750CC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		404B70F82A55F11D007750CC /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		404B70FB2A55F765007750CC /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		4069843B2A7C8F6700DFB122 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		4069843E2A7C90B300DFB122 /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		407584EC2A4F642700B20AEA /* FacebookMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		407584EF2A4F642700B20AEA /* FacebookMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookMessengerApp.swift; sourceTree = "<group>"; };
 		407584F12A4F642700B20AEA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -186,10 +190,27 @@
 		404B70FA2A55F757007750CC /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				4069843A2A7C8F5800DFB122 /* Service */,
 				40A27CF32A7448A90090E5FE /* View */,
 				40A27CF22A7448A60090E5FE /* ViewModel */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		4069843A2A7C8F5800DFB122 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4069843B2A7C8F6700DFB122 /* ChatService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4069843D2A7C908F00DFB122 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4069843E2A7C90B300DFB122 /* Constans.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		407584E32A4F642700B20AEA = {
@@ -215,6 +236,7 @@
 				407585002A4F64CB00B20AEA /* Core */,
 				407584FF2A4F64C700B20AEA /* Model */,
 				407584FE2A4F64C500B20AEA /* Service */,
+				4069843D2A7C908F00DFB122 /* Utils */,
 				407584FD2A4F64C200B20AEA /* Extensions */,
 				407584F32A4F642800B20AEA /* Assets.xcassets */,
 				4022E5452A64879900A57133 /* GoogleService-Info.plist */,
@@ -452,6 +474,7 @@
 				401AD0E32A563BBE0026E9DA /* ChatMessageCell.swift in Sources */,
 				401AD0E52A563E5C0026E9DA /* ChatBubble.swift in Sources */,
 				404B70F92A55F11D007750CC /* CircularProfileImageView.swift in Sources */,
+				4069843C2A7C8F6700DFB122 /* ChatService.swift in Sources */,
 				402249D62A4F71D200AEA449 /* InboxView.swift in Sources */,
 				4022E5532A648A3F00A57133 /* LoginViewModel.swift in Sources */,
 				40A27CED2A731E6B0090E5FE /* NewMessageViewModel.swift in Sources */,
@@ -463,6 +486,7 @@
 				404B70EC2A5222DA007750CC /* SettingsOptionsViewModel.swift in Sources */,
 				40A27CEF2A7443E60090E5FE /* Message.swift in Sources */,
 				40E6FE402A6615DD008CC380 /* UserServise.swift in Sources */,
+				4069843F2A7C90B300DFB122 /* Constans.swift in Sources */,
 				402249D32A4F6FD000AEA449 /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
