@@ -6,20 +6,23 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct InboxRowView: View {
+    let message: Message
+    
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
-            CircularProfileImageView(user: User.MOCK_USER, size: .medium)
+            CircularProfileImageView(user: message.user, size: .medium)
             VStack(alignment: .leading, spacing: 4) {
-                Text("Sasha Pavlov")
+                Text(message.user?.fullName ?? "")
                     .font(.subheadline)
                     .fontWeight(.semibold)
-                Text("Some test message for now")
+                Text(message.messageText)
                     .font(.subheadline)
                     .foregroundColor(.secondary)
                     .lineLimit(2)
-                    //.frame(maxWidth: UIScreen.main.bounds.width - 100, alignment: .leading)
+                    .frame(maxWidth: UIScreen.main.bounds.width - 100, alignment: .leading)
             }
             
             HStack {
@@ -35,6 +38,6 @@ struct InboxRowView: View {
 
 struct InboxRowView_Previews: PreviewProvider {
     static var previews: some View {
-        InboxRowView()
+        InboxRowView(message: Message(fromId: "", toId: "", messageText: "", timestamp: Timestamp()))
     }
 }

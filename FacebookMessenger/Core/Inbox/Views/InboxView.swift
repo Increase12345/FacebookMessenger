@@ -23,8 +23,10 @@ struct InboxView: View {
                 ActiveNowView()
                 
                 List {
-                    ForEach(0...10, id: \.self) { message in
-                        InboxRowView()
+                    ForEach(vm.recentMessages) { message in
+                        NavigationLink(value: message) {
+                            InboxRowView(message: message)
+                        }
                     }
                 }
                 .listStyle(.plain)
