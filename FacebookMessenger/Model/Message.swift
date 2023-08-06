@@ -29,4 +29,8 @@ struct Message: Codable, Identifiable, Hashable {
     var isFromCurrentUser: Bool {
         fromId == Auth.auth().currentUser?.uid
     }
+    
+    var timestampString: String {
+        timestamp.dateValue().timestampString()
+    }
 }
